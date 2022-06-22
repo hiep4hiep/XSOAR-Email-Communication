@@ -1,6 +1,6 @@
 # XSOAR-Email-Communication-v2
 
-Email communication v2 is an upgraded and expanded version of the OOTB Email Communication pack. This package added capability to initiate and manage multiple email communication directly from the incident layout.
+Email communication v2 is an upgraded and expanded version of the OOTB Email Communication pack. This package added capability to initiate and manage multiple email communications (including EmailAskUser flow) directly from the incident layout.
 ![image](https://user-images.githubusercontent.com/41276379/174926289-aa819163-3573-4776-bee5-185035ae2ace.png)
 
 ## How it works
