@@ -6,6 +6,7 @@ Email communication v2 is an upgraded and expanded version of the OOTB Email Com
 ## How it works
 There will be a dedicated tab named **Email** in every incident. Within this tab, analysts can send email, receive email with user. Moreover, this tab can manage multiple email communications (called Topic). That gives the analysts the ability to send different email to different team about different matters, read and reply to those email thread directly from XSOAR.
 ### Initiating communication
+When analysts want to send a new email.
 - Select **Email Team** to pre-fill the email to with email addresses of the team member. Email Team is a XSOAR list that stores those emails.
 - Or analyst can type in **Email To** field.
 - Email CC is optional
@@ -14,13 +15,14 @@ There will be a dedicated tab named **Email** in every incident. Within this tab
 - Email Body: write new email by using XSOAR default Markdown editor.
 - Hit Send button
 
+With reply email, the Email To and Email Subject will be pre-filled when analysts select a Topic to reply to.
+
 ![image](https://user-images.githubusercontent.com/41276379/174948735-63d3bdb9-5b0e-4fbf-9657-4edd6da4effd.png)
 
 ### Email Ask User
-- Use similar set up to the OOTB EmailAskUser
+This Email tab can also manage EmailAskUser communication. The email ask user communication will be stored and viewed on Email tab. The playbook set up is similar to the OOTB EmailAskUser, only need to:
 - Change EmailAskUser task to use **EmailAskUserNew** script
 - Change EmailAskUserResponse task to use **EmailAskUserResponseNew** script
-- The email ask user communication will be stored and viewed on Email tab
 
 ## Set it up
 Go to About > Troubleshooting > Import the tar.gz file of this content pack
