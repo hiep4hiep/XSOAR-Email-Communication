@@ -25,8 +25,8 @@ The 1st tab of the layout (Email) is used to send/receive/view all email communi
 - Open the **layoutscontainer-<layoutname>.json** file, paste below JSON text after line 15
   ![image](https://user-images.githubusercontent.com/41276379/174946089-4f10f7df-29f1-430a-98ee-9499f60c54a2.png)
 
- `
-  {
+ ```
+  			{
 				"hidden": false,
 				"id": "k8pjohtsgj",
 				"name": "Email",
@@ -198,10 +198,11 @@ The 1st tab of the layout (Email) is used to send/receive/view all email communi
 				"showEmptyFields": true,
 				"type": "custom"
 			},
- `
+ ```
  - Last step is set input for the Send button on layout. Click Send button, fill in **email_from** field with the email you use to send email from XSOAR. 
-  ![Screen Shot 2022-06-22 at 2 53 56 pm](https://user-images.githubusercontent.com/41276379/174946562-7d2d26f1-9f76-4042-bb0c-989d085e181a.png)
-  
+  ![image](https://user-images.githubusercontent.com/41276379/174946562-7d2d26f1-9f76-4042-bb0c-989d085e181a.png)
+
+	
 ### Automation Scripts
 Verify these scripts are available in XSOAR
 - EmailAskUserNew
