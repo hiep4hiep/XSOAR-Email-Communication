@@ -24,6 +24,13 @@ This Email tab can also manage EmailAskUser communication. The email ask user co
 - Change EmailAskUser task to use **EmailAskUserNew** script
 - Change EmailAskUserResponse task to use **EmailAskUserResponseNew** script
 
+### Use it in playbook
+The **SendEmailThread** script can be used as a playbook task and result will be managed in Email tab
+Here is an example call:
+```
+!SendEmailThread email_to="hnguyen@xyz.com" email_subject="Network issue" email_body="Please verify this connection" email_from="soc_team@email.com"
+```
+
 ## Set it up
 Go to About > Troubleshooting > Import the tar.gz file of this content pack
 
