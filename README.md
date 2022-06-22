@@ -9,7 +9,7 @@ There will be a dedicated tab named **Email** in every incident. Within this tab
 - Select **Email Team** to pre-fill the email to with email addresses of the team member. Email Team is a XSOAR list that stores those emails.
 - Or analyst can type in **Email To** field.
 - Email CC is optional
-- Email Subject: this email subject is mandatory and will become the Email Topic to filter and view later.
+- Email Subject: this field is mandatory and will become the Email Topic to filter and view later.
 - Attachment: browse and add attachment to the email.
 - Email Body: write new email by using XSOAR default Markdown editor.
 - Hit Send button
