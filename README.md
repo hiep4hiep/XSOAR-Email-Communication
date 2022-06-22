@@ -13,16 +13,21 @@ There are 3 required items for the content pack to work. You need to verify each
 
 ### Verify Preprocessing rule
 Verify if Settings > Integrations > Pre-Process rules has this rule. The rule is used for getting reply email from user and link it to the working incident where the communication was originally initiated.
+
 ![image](https://user-images.githubusercontent.com/41276379/174940290-9a02f6f0-8fc0-4c72-848b-294defbf8e6f.png)
 
 ### Email thread layout
-The pack includes a default layout *Email Thread v2*. Go to Settings > Objects Setup > Layout > Email Thread v2
+The pack includes a default layout *Email Thread v2*. Go to Settings > Objects Setup > Layout > Email Thread v2.
+
 ![image](https://user-images.githubusercontent.com/41276379/174944744-dbea6d98-f901-42cc-b8ee-9756e36440cc.png)
+
 The 1st tab of the layout (Email) is used to send/receive/view all email communications which are tied to current incident. In order to add this tab to other incident layout, follow these steps:
 - Export the incident layout you want to add Email tab > you will get **layoutscontainer-<layoutname>.json** file
+	
   ![image](https://user-images.githubusercontent.com/41276379/174945468-2a5c26d3-5def-4a97-8888-83ba5a31b235.png)
 
 - Open the **layoutscontainer-<layoutname>.json** file, paste below JSON text after line 15
+	
   ![image](https://user-images.githubusercontent.com/41276379/174946089-4f10f7df-29f1-430a-98ee-9499f60c54a2.png)
 
  ```
@@ -200,6 +205,7 @@ The 1st tab of the layout (Email) is used to send/receive/view all email communi
 			},
  ```
  - Last step is set input for the Send button on layout. Click Send button, fill in **email_from** field with the email you use to send email from XSOAR. 
+	
   ![image](https://user-images.githubusercontent.com/41276379/174946562-7d2d26f1-9f76-4042-bb0c-989d085e181a.png)
 
 	
