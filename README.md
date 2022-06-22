@@ -3,6 +3,25 @@
 Email communication v2 is an upgraded and expanded version of the OOTB Email Communication pack. This package added capability to initiate and manage multiple email communication directly from the incident layout.
 ![image](https://user-images.githubusercontent.com/41276379/174926289-aa819163-3573-4776-bee5-185035ae2ace.png)
 
+## How it works
+There will be a dedicated tab named **Email** in every incident. Within this tab, analysts can send email, receive email with user. Moreover, this tab can manage multiple email communications (called Topic). That gives the analysts the ability to send different email to different team about different matters, read and reply to those email thread directly from XSOAR.
+### Initiating communication
+- Select **Email Team** to pre-fill the email to with email addresses of the team member. Email Team is a XSOAR list that stores those emails.
+- Or analyst can type in **Email To** field.
+- Email CC is optional
+- Email Subject: this email subject is mandatory and will become the Email Topic to filter and view later.
+- Attachment: browse and add attachment to the email.
+- Email Body: write new email by using XSOAR default Markdown editor.
+- Hit Send button
+
+![image](https://user-images.githubusercontent.com/41276379/174948735-63d3bdb9-5b0e-4fbf-9657-4edd6da4effd.png)
+
+### Email Ask User
+- Use similar set up to the OOTB EmailAskUser
+- Change EmailAskUser task to use **EmailAskUserNew** script
+- Change EmailAskUserResponse task to use **EmailAskUserResponseNew** script
+- The email ask user communication will be stored and viewed on Email tab
+
 ## Set it up
 Go to About > Troubleshooting > Import the tar.gz file of this content pack
 
@@ -204,7 +223,7 @@ The 1st tab of the layout (Email) is used to send/receive/view all email communi
 				"type": "custom"
 			},
  ```
- - Last step is set input for the Send button on layout. Click Send button, fill in **email_from** field with the email you use to send email from XSOAR. 
+ - Last step is to set input for the Send button on layout. Click Send button, fill in **email_from** field with the email you use to send email from XSOAR. 
 	
   ![image](https://user-images.githubusercontent.com/41276379/174946562-7d2d26f1-9f76-4042-bb0c-989d085e181a.png)
 
