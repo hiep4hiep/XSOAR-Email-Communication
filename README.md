@@ -232,9 +232,9 @@ The 1st tab of the layout (Email) is used to send/receive/view all email communi
 				"type": "custom"
 			},
  ```
- - Last step is to set input for the Send button on layout. Click Send button, fill in **email_from** field with the email you use to send email from XSOAR. 
+ - Last step is to set input for the Send button on layout. Click Send button, fill in **integration_name** field with the email integration instance you use to send email from XSOAR. 
 	
-  ![image](https://user-images.githubusercontent.com/41276379/174946562-7d2d26f1-9f76-4042-bb0c-989d085e181a.png)
+  ![image](https://user-images.githubusercontent.com/41276379/187349347-da93fafd-4857-4df9-b322-402efd8dc66d.png)
 
 	
 ### Automation Scripts
@@ -245,6 +245,6 @@ Verify these scripts are available in XSOAR
 - EmailTeamSelect
 - EmailTopicsDisplay
 - EmailTopicsSelect
-- EmailTopcsShow
+- EmailTopicsShow
 - ProprocessEmailThread
 - SendEmailThread
