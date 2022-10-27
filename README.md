@@ -28,7 +28,7 @@ This Email tab can also manage EmailAskUser communication. The email ask user co
 The **SendEmailThread** script can be used as a playbook task and result will be managed in Email tab
 Here is an example call:
 ```
-!SendEmailThread email_to="hnguyen@xyz.com" email_subject="Network issue" email_body="Please verify this connection" email_from="soc_team@email.com"
+!SendEmailThread email_to="hnguyen@xyz.com" email_subject="Network issue" email_body="Please verify this connection" integration_name="EWS Instance 1"
 ```
 
 ## Set it up
