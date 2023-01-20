@@ -32,12 +32,10 @@ Here is an example call:
 ```
 
 ## Set it up
-Go to About > Troubleshooting > Import the tar.gz file of this content pack
+- Unzip the email_thread.zip
+- Make sure you have demisto-sdk installed and set up on your computer
+- Run `demisto-sdk upload -i EmailThread`
 
-There are 3 required items for the content pack to work. You need to verify each items if the import was successful.
-- Preprocessing rule
-- Email thread layout
-- Automation scripts
 
 ### Verify Preprocessing rule
 Verify if Settings > Integrations > Pre-Process rules has this rule. The rule is used for getting reply email from user and link it to the working incident where the communication was originally initiated.
